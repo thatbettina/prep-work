@@ -14,6 +14,7 @@ require 'rspec'
 #
 # Difficulty: 2/5
 
+
 describe "#nearest_larger" do
   it "handles a simple case to the right" do
     nearest_larger([2,3,4,8], 2).should == 3
