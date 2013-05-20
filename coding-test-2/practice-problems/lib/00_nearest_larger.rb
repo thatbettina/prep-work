@@ -4,12 +4,11 @@ def nearest_larger(arr, idx)
 	loop do
 		left = idx - distance
 		right = idx + distance
-		if var < arr[left] && (left) >= 0
+		if var < arr[left] && left >= 0
 			return left
-		elsif (right < arr.length) && var < arr[right]
+		elsif right < arr.length && var < arr[right]
 			return right 
-		end
-		if (left) <  0 && (right) > (arr.length-1)
+		elsif left < 0 && right > arr.length-1
 		 	return nil
 		end
 		distance += 1
